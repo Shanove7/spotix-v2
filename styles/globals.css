@@ -1,0 +1,71 @@
+:root, :root[data-theme="dark"] {
+  --bg: #0a0a0b;
+  --bg2: #111113;
+  --bg3: #18181b;
+  --card: rgba(17,17,19,0.95);
+  --border: rgba(243,241,236,0.10);
+  --baccent: rgba(199,166,98,0.35);
+  --t1: #f3f1ec;
+  --t2: #8c8a85;
+  --t3: #5c5a56;
+  --green: #c7a662;
+  --green2: #ddbd7c;
+  --gdim: rgba(199,166,98,0.12);
+  --gglow: rgba(199,166,98,0.20);
+  --red: #c2594f;
+  --nav: rgba(10,10,11,0.88);
+  --sh: 0 20px 60px rgba(0,0,0,0.7);
+  --sh2: 0 4px 20px rgba(0,0,0,0.5);
+  --inp: rgba(255,255,255,0.05);
+  --skel: rgba(255,255,255,0.06);
+  --prog: rgba(255,255,255,0.10);
+  --orb1: rgba(199,166,98,0.09);
+  --orb2: rgba(199,166,98,0.05);
+  --grid: rgba(255,255,255,0.022);
+}
+
+:root[data-theme="light"] {
+  --bg: #faf9f6;
+  --bg2: #f1efe9;
+  --bg3: #e6e3da;
+  --card: rgba(255,255,255,0.97);
+  --border: rgba(10,10,11,0.09);
+  --baccent: rgba(154,122,58,0.32);
+  --t1: #131311;
+  --t2: #6b6862;
+  --t3: #a4a099;
+  --green: #9a7a3a;
+  --green2: #7d612c;
+  --gdim: rgba(154,122,58,0.10);
+  --gglow: rgba(154,122,58,0.16);
+  --red: #b1493f;
+  --nav: rgba(250,249,246,0.90);
+  --sh: 0 20px 60px rgba(0,0,0,0.10);
+  --sh2: 0 4px 20px rgba(0,0,0,0.06);
+  --inp: rgba(0,0,0,0.04);
+  --skel: rgba(0,0,0,0.07);
+  --prog: rgba(0,0,0,0.10);
+  --orb1: rgba(154,122,58,0.07);
+  --orb2: rgba(154,122,58,0.04);
+  --grid: rgba(0,0,0,0.03);
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { background: #0a0a0b; scroll-behavior: smooth; }
+body {
+  background: var(--bg);
+  color: var(--t1);
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  transition: background .3s, color .3s;
+  min-height: 100vh;
+  line-height: 1.5;
+}
+.display, h1.h1, h1.dh1, h2.dh2, .logo-txt, .pl-name { font-family: 'Fraunces', serif; }
+::selection { background: var(--gglow); }
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: var(--bg2); }
+::-webkit-scrollbar-thumb { background: var(--baccent); border-radius: 4px; }
+a { text-decoration: none; color: inherit; }
+button { cursor: pointer; border: none; background: none; font-family: inherit; }
+input, textarea { font-family: inherit; }
